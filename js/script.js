@@ -16,6 +16,8 @@ window.addEventListener('mousemove', function(event){
     mouseRx.y = event.y;
     console.log(mouseRx.x, mouseRx.y);
 });
+
+ctx.fillStyle = 'white';
 ctx.font = '30px Verdana';
 ctx.fillText('A', 0, 40);
 
