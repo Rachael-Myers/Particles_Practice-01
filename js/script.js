@@ -20,7 +20,9 @@ window.addEventListener('mousemove', function(event){
 ctx.fillStyle = 'white';
 ctx.font = '30px Verdana';
 ctx.fillText('A', 0, 40);
-//scanning an area of 100x100 px by px for x,y,&color data for each px
-ctx.strokestyle = 'white';
+//visualization of the scanning an area of 100x100 px by px for x,y,&color data for each px
+//ctx.strokestyle = 'white';
+//ctx.strokeRect(0, 0, 100, 100);
 const data = ctx.getImagetData(0, 0, 100, 100);
+
 
