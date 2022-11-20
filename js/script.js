@@ -4,7 +4,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let particleArray =[];
 
-// handle mouse
+// handle mouse (creates an area around the location of the mouse to scan)
 const mouseRx = {
     x: null,
     y: null, 
@@ -20,4 +20,7 @@ window.addEventListener('mousemove', function(event){
 ctx.fillStyle = 'white';
 ctx.font = '30px Verdana';
 ctx.fillText('A', 0, 40);
+//scanning an area of 100x100 px by px for x,y,&color data for each px
+ctx.strokestyle = 'white';
+const data = ctx.getImagetData(0, 0, 100, 100);
 
